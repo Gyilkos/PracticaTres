@@ -53,7 +53,7 @@ const App = () => {
 const handleSave = async () => {
   // Aquí va la lógica para guardar los datos en la API
   // Por ejemplo:
-  const response = await fetch('https://tu-api.com', {
+  const response = await fetch('http://192.168.0.32:8000/api', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ const handleSave = async () => {
           onChangeText={(value) => onChange(value, 'name')}
           value={name}
         />
-        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Nombre'}</Text>
+        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Nicolas'}</Text>
       </View>
 
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -105,7 +105,7 @@ const handleSave = async () => {
           onChangeText={(value) => onChange(value, 'lastName')}
           value={lastName}
         />
-        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Apellido'}</Text>
+        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Robles'}</Text>
       </View>
 
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -118,7 +118,7 @@ const handleSave = async () => {
           onChangeText={(value) => onChange(value, 'email')}
           value={email}
         />
-        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Email'}</Text>
+        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'nico@gmail.com'}</Text>
       </View>    
 
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -131,7 +131,7 @@ const handleSave = async () => {
           onChangeText={(value) => onChange(value, 'city')}
           value={city}
         />
-        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Ciudad'}</Text>
+        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Antofagasta'}</Text>
       </View>
 
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -144,7 +144,7 @@ const handleSave = async () => {
           onChangeText={(value) => onChange(value, 'country')}
           value={country}
         />
-        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Pais'}</Text>
+        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Turquia'}</Text>
       </View>
 
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -157,7 +157,7 @@ const handleSave = async () => {
           onChangeText={(value) => onChange(value, 'summary')}
           value={summary}
         />
-        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Resumen'}</Text>
+        <Text style={{...styles.textStyle, color: 'white', borderColor: '#2c64c6', borderWidth: 1}}>{'Salvando la vida'}</Text>
       </View>
 
       <Button title="ACTUALIZAR" onPress={handleSave} />
